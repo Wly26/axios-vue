@@ -48,6 +48,11 @@ const routes = [
     path: '/3-6', 
     name: '取消请求',
     component: () => import( '../views/3-6.vue')
+  },
+  {
+    path: '/contactList', 
+    name: '联系人列表',
+    component: () => import( '../views/contactList.vue')
   }
 ]
 
