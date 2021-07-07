@@ -53,6 +53,11 @@ const routes = [
     path: '/contactList', 
     name: '联系人列表',
     component: () => import( '../views/contactList.vue')
+  },
+  {
+    path: '/contactListshizhan', 
+    name: '联系人列表-实战',
+    component: () => import( '../views/contactListshizhan.vue')
   }
 ]
 
