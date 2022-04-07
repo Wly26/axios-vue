@@ -16,33 +16,37 @@ import axios from 'axios'
 export default {
   name: 'axios2-2',
   created(){
+    //
     // get
     // http://localhost:8080/data.json?id=12
     // 方式一
-    axios.get('/data.json',{
-      params:{
-        id:12
-      }
-    }).then((res)=>{
-      console.log(res)
-    })
-    // 方式二
-    axios({
-      method:'get',
-      url:'/data.json',
-      params:{
-        id:12
-      }
-    }).then(res=>{
-      console.log(res)
-    })
+    // axios.get('/data.json',{
+    //   params:{
+    //     id:12
+    //   }
+    // }).then((res)=>{
+    //   console.log(res)
+    // })
+    // // 方式二
+    // axios({
+    //   method:'get',
+    //   url:'/data.json',
+    //   params:{
+    //     id:12
+    //   }
+    // }).then(res=>{
+    //   console.log(res)
+    // })
 
-    // post
-    // data数据格式：
-    // 1.applicition/json(传入json数据)
+
+
     let data = {
       id:12
     }
+    
+    // post
+    // data数据格式：
+    // 1.applicition/json(传入json数据)
     // 路径，data数据格式
     // 方式一：
     axios.post('/post',data).then(res=>{
@@ -65,6 +69,7 @@ export default {
     axios.post('/post',formData).then(res=>{
       console.log(res)
     })
+
     // put请求
     axios.put('/put',data).then(res=>{
       console.log(res)

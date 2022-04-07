@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <div>
+    <div id="modal">
+      <p>modal</p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -44,7 +48,8 @@ export default {
     let instance_phone = axios.create({})
     // 请求前，展示
     instance_phone.interceptors.request.use(config=>{
-      $('#modal').show()
+      // $('#modal').show()
+      $('#modal').hide()
       return config
     })
     // 请求后，隐藏

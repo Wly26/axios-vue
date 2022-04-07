@@ -5,7 +5,7 @@
 <script>
 import axios from 'axios'
 /*
-  创建实例
+  创建实例：就是定义一个方法，接收axios请求的返回结果。
 */
 export default {
   name: 'axios3-1',

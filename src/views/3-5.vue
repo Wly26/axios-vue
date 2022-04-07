@@ -29,7 +29,7 @@ export default {
       return Promise.reject(err)
     })
 
-    axios.get('/post',data).then(res=>{
+    axios.get('/post').then(res=>{
       console.log(res)
     }).catch(err=>{
       // 请求错误时,都会进入这个函数

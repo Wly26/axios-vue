@@ -2,8 +2,10 @@
   <div>
     <van-contact-list
       :list="list"
+      default-tag-text="默认"
       @add="onAdd"
       @edit="onEdit"
+      @select="onSelect"
     />
     <van-popup v-model:show="show" position="bottom">
       <van-contact-edit
@@ -63,6 +65,9 @@ export default {
       this.show = true;
       this.isEdit = true;
       this.editingContact = info
+    },
+    onSelect(info){
+      console.log(info)
     },
     //保存联系人
     onSave(info) {

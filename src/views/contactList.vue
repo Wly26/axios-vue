@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-button plain type="primary">朴素按钮</van-button>
+    <!-- <van-button plain type="primary">朴素按钮</van-button> -->
     <van-contact-edit
       is-edit
       show-set-default
